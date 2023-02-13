@@ -19,9 +19,9 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: nobleleo                          # the main title
+title: 学习鸟                          # the main title
 
-tagline: 高傲的狮子座   # it will display as the sub-title
+tagline: 学，然后知不足！   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
@@ -30,7 +30,7 @@ description: >-                        # used by seo meta and the atom feed
 url: ''
 
 github:
-  username: nobleleo             # change to your github username
+  username: mmy83             # change to your github username
 
 twitter:
   username: twitter_username            # change to your twitter username
@@ -38,12 +38,12 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: nobleleo
-  email: nobleleo@126.com             # change to your email address
+  name: mmy83
+  email: mmy83@126.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    # - https://twitter.com/nobleleo      # change to your twitter homepage
-    - https://github.com/nobleleo       # change to your github homepage
+    # - https://twitter.com/mmy83      # change to your twitter homepage
+    - https://github.com/mmy83       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
