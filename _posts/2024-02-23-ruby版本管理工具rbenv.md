@@ -191,3 +191,11 @@ rbenv global 3.1.2
 $ rbenv local --unset
 
 ```
+
+## RVM问题
+
+&emsp;&emsp;不知道为什么，我的电脑上被安装了```rvm```,然后进入一些目录就会显示没有```ruby```某个版本，觉得很烦，这里简单记录一下写在
+
+```shell
+rvm implode #需要重新打开命令行，提示就消失了
+```
