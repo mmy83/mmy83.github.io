@@ -2,7 +2,7 @@
 title: ruby版本管理工具rbenv
 author: mmy83
 date: 2024-02-23 19:39:00 +0800
-categories: [IT技术, 语言, ruby]
+categories: [语言, ruby]
 tags: [ruby, 版本管理, rbenv]
 math: true
 mermaid: true
