@@ -1,7 +1,7 @@
 ---
 title: javascript基础-Promise
 author: mmy83
-date: 2024-02-29 13:21:00 +0800
+date: 2024-03-04 13:21:00 +0800
 categories: [语言, javascript]
 tags: [Promise, 异步, javascript]
 math: true
