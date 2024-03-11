@@ -16,9 +16,8 @@ image:
 
 &emsp;&emsp;```async```、```await```是处理javascript中的异步问题的。
 
-+、async：声明函数时使用，用于表明该函数是一个异步函数。该函数返回值是一个```Promise```。既然是Promise，就可以用```then```来回去值。
-
-+、await：只能在```async```标记的函数内使用。在函数调用时使用，表示阻塞直到这个函数返回。函数的返回结果如果是一个Promise，则相当于用then获取返回值而不是Promise这个对象，如果是普通函数，则直接返回。
++ async：声明函数时使用，用于表明该函数是一个异步函数。该函数返回值是一个```Promise```。既然是Promise，就可以用```then```来回去值。
++ await：只能在```async```标记的函数内使用。在函数调用时使用，表示阻塞直到这个函数返回。函数的返回结果如果是一个Promise，则相当于用then获取返回值而不是Promise这个对象，如果是普通函数，则直接返回。
 
 ```javascript
     function a() {
