@@ -154,7 +154,7 @@ public class Thread implements Runnable {
 
 1、Thread是一个Runnable接口的实现，那么Thread里一定有一个run方法的实现。
 
-2、我们实例化一个Thread对象或者Thread子类的对象，并执行start方法，可以看到start方法又去执行了start0方法，而这个start0是一个native方法，也就是说，这个不是java实现的，而是调用了系统接口，这个也很好理解，创建并管理线程都是由系统统一实现的。所有在这里调用jni方法很正常。而从start0到run这段代码在jdk底层里。因为Oracle JDK不开源，我也还没有到能看懂源码的程度，这里引用一篇高手的博文：
+2、我们实例化一个Thread对象或者Thread子类的对象，并执行start方法，可以看到start方法又去执行了start0方法，而这个start0是一个native方法，也就是说，这个不是java实现的，而是调用了系统接口，这个也很好理解，创建并管理线程都是由系统统一实现的。所有在这里调用jni方法很正常。而从start0到run这段代码在jdk底层里。因为Oracle JDK不开源，这里引用一篇高手的博文，是通过openjdk来分析java线程的：
 
 [java中线程启动过程分析及本地方法 start0源代码的追踪学习](https://blog.csdn.net/fengxiandada/article/details/123432662)
 
