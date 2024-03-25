@@ -2,7 +2,7 @@
 title: javascript基础-async与await
 author: mmy83
 date: 2024-03-05 14:27:00 +0800
-categories: [语言, javascript]
+categories: [编程, javascript]
 tags: [async, await, 异步, javascript]
 math: true
 mermaid: true

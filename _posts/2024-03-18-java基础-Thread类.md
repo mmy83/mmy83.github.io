@@ -2,7 +2,7 @@
 title: java基础-Thread类
 author: mmy83
 date: 2024-03-18 13:49:00 +0800
-categories: [语言, java]
+categories: [编程, java]
 tags: [线程, Thread, Runnable, java]
 math: true
 mermaid: true

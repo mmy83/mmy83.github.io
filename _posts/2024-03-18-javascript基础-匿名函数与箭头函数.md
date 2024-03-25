@@ -2,7 +2,7 @@
 title: javascript基础-匿名函数与箭头函数
 author: mmy83
 date: 2024-03-18 13:02:00 +0800
-categories: [语言, javascript]
+categories: [编程, javascript]
 tags: [函数, 匿名函数, 箭头函数, javascript]
 math: true
 mermaid: true
