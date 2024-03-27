@@ -85,3 +85,43 @@ const argv = require('minimist')(process.argv.slice(2), options);
 
 > 注：我需要这个参数约束的原因是因为上面的```dir```参数，这是一个目录，但是我的目录名是包括```001```这样的目录，总被转化为数字，导致找不到对应目录。
 {: .prompt-tip }
+
+## 别名
+
+&emsp;&emsp;再仔细研究一下发现，```minimist```也有别名功能，设置也很简单
+
+```javascript
+
+const options = {
+    string: ["dir", "d", "word", "w", "to", "t"],
+    boolean: ["help", "h"],
+    alias:{ "dir":"d","word":"w","to":"t" ,"help":"h"}
+}
+
+var argv = require('minimist')(process.argv,options);
+console.dir(argv);
+
+```
+
+```shell
+node index3.js -w a --word aaa -d b --dir bbbb -h --help -t c --to cccc
+```
+
+```console
+{
+  _: [
+    '/usr/local/bin/node',
+    '/Users/mmy83/workspace/node/cmd/index3.js'
+  ],
+  help: true,
+  h: true,
+  w: [ 'a', 'aaa' ],
+  word: [ 'a', 'aaa' ],
+  d: [ 'b', 'bbbb' ],
+  dir: [ 'b', 'bbbb' ],
+  t: [ 'c', 'cccc' ],
+  to: [ 'c', 'cccc' ]
+}
+```
+
+&emsp;&emsp;会发现设置了别名后，参数的数值是关联的，不再是没有任何关系而独立解析的。
