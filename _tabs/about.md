@@ -1,8 +1,12 @@
 ---
 # the default layout is 'page'
+title: 自我介绍
 icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+&emsp;&emsp;我是生物制药专业毕业，毕业后在制药行业工作两年。但我对于编程和软件开发有着浓厚的兴趣，并且通过自学积累了一定的编程经验，一次偶然的机会进入了IT行业（此处真心感谢 **吴哥** 和 **张总** 能给我机会）。
+
+&emsp;&emsp;在进入IT行业之后的几年里，对于我来说要学的东西太多了，我深刻的明白我的劣势，学历低、专业不对口、入行晚，但是我还是很喜欢这个行业，于是我贪婪的学习着各种技术。我认为自己具备较强的学习能力和适应能力，能够快速掌握新技术并应用到实际项目中。
+
+&emsp;&emsp;我对IT行业有着浓厚的兴趣，并愿意在这个领域不断学习和进步。
