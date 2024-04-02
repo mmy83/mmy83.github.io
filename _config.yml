@@ -203,3 +203,5 @@ jekyll-archives:
 # 用github的pages的actions好像不需要别像在docs，而是用部署脚本配置的
 # destination: docs
 
+# 百度统计
+baidu-analysis: 66546a73ff899d23c7f8d5ce76d5e54c
