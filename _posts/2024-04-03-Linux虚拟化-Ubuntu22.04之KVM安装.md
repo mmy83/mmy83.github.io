@@ -3,7 +3,7 @@ title: Linux虚拟化-Ubuntu22.04之KVM安装
 author: mmy83
 date: 2024-04-03 11:14:00 +0800
 categories: [IT技术, 虚拟化]
-tags: [异常, Exception, Error, java]
+tags: [linux, kvm, 虚拟化, ubuntu]
 math: true
 mermaid: true
 image:
