@@ -20,6 +20,8 @@ image:
 
 &emsp;&emsp;在宿主机创建网桥，并为网桥指定静态ip地址。
 
+### 方法一：手动修改配置文件
+
 ```shell
 # vi /etc/netplan/00-installer-config.yaml
 
@@ -68,6 +70,15 @@ eno1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         TX packets 558286  bytes 56944955 (56.9 MB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
         device interrupt 16  memory 0xa1300000-a1320000
+```
+
+### 方法二：使用 virsh 命令
+
+```shell
+#创建网桥
+virsh iface-bridge eno1 br0
+# 查看网桥,需要安装 bridge-utils
+brctl show
 ```
 
 ## 使用网桥创建虚拟机
