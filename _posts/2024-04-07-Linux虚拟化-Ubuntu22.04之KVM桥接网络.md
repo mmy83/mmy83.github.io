@@ -100,3 +100,23 @@ virt-install \
 >
 > 除此之外，还有很多参数，可以通过-h获得帮助信息
 {: .prompt-tip }
+
+## 修改已存在虚拟机使用网桥
+
+```shell
+# 宿主机执行编辑虚拟机，执行命令后会让选择编辑器
+virsh edit ubuntu-2204-server
+```
+
+```shell
+# 定位到网络配置
+<interface type='network'>
+    <source network='default'/>
+# 改为
+<interface type='bridge'>
+    <source bridge='br0'/>
+
+# 重启虚拟机生效
+```
+
+&emsp;&emsp;通过上面的操作，可以让虚拟机被宿主机同一个网络的机器访问。
