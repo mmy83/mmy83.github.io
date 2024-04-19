@@ -98,15 +98,25 @@ microk8s@microk8s-01:~$
 
 ![dashboard的token](/images/2024-04-18/云平台-microk8s（三）：dashboard初体验/云平台-microk8s（三）：dashboard初体验-02.png)
 
-### 代理方式(废弃)
+### 代理方式(本机)
 
 ```shell
-microk8s.kubectl proxy --accept-hosts=.* --address=0.0.0.0
+microk8s.kubectl proxy --accept-hosts=.* --address=0.0.0.0 --port=8001
 ```
 
 &emsp;&emsp;开启代理后，会提示 ```Starting to serve on [::]:8001``` ，访问 ```http://192.168.1.248:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#/login``` ,结果发现这样已经被认为不安全，不能登录了。
 
 ![代理失败](/images/2024-04-18/云平台-microk8s（三）：dashboard初体验/云平台-microk8s（三）：dashboard初体验-03.png)
+
+&emsp;&emsp;由于安全问题，代理方式只能用于本地（localhost）登陆，经测试，即便加了参数,一样失败。
+
+&emsp;&emsp;访问地址很长，但是具有规则：```/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#/login```，分成三段来看：
+
+1、```/api/v1```：接口版本
+
+2、```/namespaces/kube-system```：命名空间
+
+3、```/services/https:kubernetes-dashboard:/proxy/#/login```：服务及访问路径
 
 ### 端口映射方式
 
