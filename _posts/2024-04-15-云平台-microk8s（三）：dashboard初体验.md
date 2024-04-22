@@ -325,3 +325,7 @@ microk8s@microk8s-01:~$
 ```
 
 &emsp;&emsp;现在通过访问```https://dashboard.mmy83.online``` 就可访问 Dashboard了。
+
+## 结束语
+
+&emsp;&emsp;通过这几篇文章完成了 MicroK8s 集群的部署。可以说 MicroK8s 和完整版本的 Kubernetes 基本是一样的，之所以使用 MicroK8s 作为学习 Kubernetes 的开始，主要还是因为他部署简单，虽然是万事开头难，然后一直难，但是如果开头有简单的方法，还是可以增加信心，让学习更顺利。
