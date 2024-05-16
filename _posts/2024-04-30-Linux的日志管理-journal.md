@@ -202,7 +202,7 @@ $ sudo journalctl --vacuum-time=1m
 $ sudo journalctl --vacuum-time=2d
 ```
 
-## 感觉
+## 感谢
 
 本文主要内容来源于网络，我只能算做整理，在此对链接作者表示感谢，如有侵权，请告知，谢谢！
 
