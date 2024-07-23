@@ -14,7 +14,7 @@ image:
 
 ## 前言
 
-&emsp;&emsp;其实我对防火墙的研究很少，大多时间都是遇到了就网上搜一下资料，现在有了AI就更简单了，都不用费力找了。但是我还是希望自己能会，毕竟省去了找的时间，所有前面写了[Linux防火墙：firewall-cmd命令介绍](/posts/Linux防火墙-firewall-cmd命令介绍/)和[Linux防火墙：firewalld-RichRule](/posts/Linux防火墙：firewalld-RichRule)两篇博文，索性这次就把```iptables```也写一下，但是要想一篇博文把```iptables```讲明白还挺难的，所有我加入了很多我的理解，可能有不对的地方望指正。。
+&emsp;&emsp;其实我对防火墙的研究很少，大多时间都是遇到了就网上搜一下资料，现在有了AI就更简单了，都不用费力找了。但是我还是希望自己能会，毕竟省去了找的时间，所有前面写了[Linux防火墙：firewall-cmd命令介绍](/posts/Linux防火墙-firewall-cmd命令介绍/)和[Linux防火墙：firewalld-RichRule](/posts/linux防火墙-firewalld-richrule/)两篇博文，索性这次就把```iptables```也写一下，但是要想一篇博文把```iptables```讲明白还挺难的，所有我加入了很多我的理解，可能有不对的地方望指正。。
 
 ## 介绍
 
