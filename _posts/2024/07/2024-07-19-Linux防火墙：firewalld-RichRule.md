@@ -248,7 +248,7 @@ NFLOG 是 iptables 和 nftables 中的一个功能，它允许你将匹配到的
 
 ### Audit
 
-```shell
+```console
 audit [limit value="rate/duration"]
 ```
 
