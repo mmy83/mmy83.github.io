@@ -260,7 +260,7 @@ audit [limit value="rate/duration"]
 
 &emsp;&emsp;action可以是接受（accept）、拒绝（reject）、丢弃（drop）或标记（mark）中的一种。 规则可以包含一个元素，也可以仅包含源。如果规则包含一个元素，则与该元素匹配的新连接将使用该动作处理。如果规则不包含元素，则来自源地址的所有内容都将使用该动作处理。
 
-```shell
+```console
 accept [limit value="rate/duration"]
 accept 将接受新的连接尝试
  

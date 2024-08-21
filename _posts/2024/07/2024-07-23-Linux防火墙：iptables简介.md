@@ -84,7 +84,7 @@ image:
 
 ### 通用语法
 
-```shell
+```console
 #通用语法，不指定默认filter表，因为filter表是最常用的
 iptables [-t 表] -管理选项 [链] [通用规则匹配] [-j 控制类型]
 ```
