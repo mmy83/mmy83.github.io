@@ -2,7 +2,7 @@
 title: Ollama：Modelfile说明
 author: mmy83
 date: 2024-05-09 22:09:00 +0800
-categories: [IT技术, AI]
+categories: [专题, AI]
 tags: [AI, 人工智能, Llama, ollama, 私有化部署, Modelfile]
 math: true
 mermaid: true
