@@ -2,8 +2,8 @@
 title: Server-Sent Events
 author: mmy83
 date: 2024-09-27 12:04:00 +0800
-categories: [IT技术, 编程]
-tags: [IT技术, 编程, python, stream, 流, sse, "规范"]
+categories: [IT技术, 网络]
+tags: [IT技术, 网络, 编程, python, stream, 流, sse, "规范"]
 math: true
 mermaid: true
 image:
