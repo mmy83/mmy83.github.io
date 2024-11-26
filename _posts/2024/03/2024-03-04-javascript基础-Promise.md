@@ -130,6 +130,7 @@ const promise = new Promise((resolve, reject) => {
 ```
 
 #### all
+
 &emsp;&emsp;```Promise.all```作用是将多个Promise包裹在一起形成一个新的Promise,新的Promise状态由包裹的所有Promise共同决定：
 
 1、当所有的Promise都为成功 (fulfilled) 状态时，新的Promise状态为fulfilled，并且会将所有Promise的返回值组成一个数组；
