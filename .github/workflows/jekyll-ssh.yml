@@ -74,9 +74,9 @@ jobs:
           # 源目录，相对于$GITHUB_WORKSPACE根目录的路径
           SOURCE: "./_site/"
           # 服务器域名/IP
-          REMOTE_HOST: ${{ variables.REMOTE_HOST }}
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           # 服务器默认用户名为root
-          REMOTE_USER: ${{ variables.REMOTE_USER }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
           # 目标目录
           TARGET: '/home/github/mmy83.com'
           # 排除目录
