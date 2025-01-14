@@ -48,22 +48,9 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
-      - name: Upload artifact
-        # Automatically uploads an artifact from the './_site' directory by default
-        uses: actions/upload-pages-artifact@v3
-
-  # Deployment job
-  deploy:
-    environment:
-      name: github-ssh
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      # - name: Deploy to GitHub Pages
-      #  id: deployment
-      #  uses: actions/deploy-pages@v4
-      # 部署到服务器
+      # - name: Upload artifact
+      #   # Automatically uploads an artifact from the './_site' directory by default
+      #   uses: actions/upload-pages-artifact@v3
       - name: deploy
         uses: easingthemes/ssh-deploy@v2.1.1
         env:
@@ -72,7 +59,7 @@ jobs:
           # 复制操作的参数。"-avzr --delete"意味部署时清空服务器目标目录下的文件
           ARGS: "-avzr --delete" 
           # 源目录，相对于$GITHUB_WORKSPACE根目录的路径
-          SOURCE: "./_site/"
+          SOURCE: "./_site"
           # 服务器域名/IP
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           # 服务器默认用户名为root
@@ -81,3 +68,33 @@ jobs:
           TARGET: '/home/github/mmy83.com'
           # 排除目录
           # EXCLUDE: "/node_modules/"
+
+  # # Deployment job
+  # deploy:
+  #   environment:
+  #     name: github-ssh
+  #     url: ${{ steps.deployment.outputs.page_url }}
+  #   runs-on: ubuntu-latest
+  #   needs: build
+  #   steps:
+  #     # - name: Deploy to GitHub Pages
+  #     #  id: deployment
+  #     #  uses: actions/deploy-pages@v4
+  #     # 部署到服务器
+  #     - name: deploy
+  #       uses: easingthemes/ssh-deploy@v2.1.1
+  #       env:
+  #         # 本地.ssh文件下的私钥id_rsa，存在secrets的PRIVATE_KEY中
+  #         SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+  #         # 复制操作的参数。"-avzr --delete"意味部署时清空服务器目标目录下的文件
+  #         ARGS: "-avzr --delete" 
+  #         # 源目录，相对于$GITHUB_WORKSPACE根目录的路径
+  #         SOURCE: "./_site/"
+  #         # 服务器域名/IP
+  #         REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+  #         # 服务器默认用户名为root
+  #         REMOTE_USER: ${{ secrets.REMOTE_USER }}
+  #         # 目标目录
+  #         TARGET: '/home/github/mmy83.com'
+  #         # 排除目录
+  #         # EXCLUDE: "/node_modules/"
