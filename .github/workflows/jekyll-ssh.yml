@@ -4,7 +4,7 @@
 # documentation.
 
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll site to Pages
+name: Deploy Jekyll site to Ali ECS
 
 on:
   # Runs on pushes targeting the default branch
@@ -61,9 +61,9 @@ jobs:
           # 源目录，相对于$GITHUB_WORKSPACE根目录的路径
           SOURCE: "./_site"
           # 服务器域名/IP
-          REMOTE_HOST: ${{ REMOTE_HOST }}
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           # 服务器默认用户名为root
-          REMOTE_USER: ${{ REMOTE_USER }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
           # 目标目录
           TARGET: '/home/github/mmy83.com'
           # 排除目录
