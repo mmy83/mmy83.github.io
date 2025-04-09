@@ -77,3 +77,5 @@ screen /dev/tty.usbserial-XXXXXX 115200
 2. [MAC（M2芯片）上如何打开串口](https://blog.csdn.net/u012855585/article/details/145598206)
 
 3. [MacBook通过Minicom连接串口](https://blog.csdn.net/2203_75758128/article/details/129640306)
+
+4. [Mac终端自带screen连接串口终端](https://blog.csdn.net/fzxhub/article/details/118539712)
