@@ -7,7 +7,7 @@ tags: [IT技术, 软件, 串口, minicom, com, screen]
 math: true
 mermaid: true
 image:
-  path: /images/2025/04/2025-04-09/串口工具：Minicom和Screen/串口工具：Minicom和Screen.png
+  path: /images/2025/04/2025-04-09/串口工具：Minicom和Screen/串口工具：Minicom和Screen-00.png
   lqip: data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoIAAgAAUAmJaQAAvd7lGJAAAD+/hJNVZSxlCrG5z9wqPa2j/Dzsn387d7OLXte8DRYhLXhR1cdg30BOXlXuScqCQvKCgAA
   alt: 串口工具：Minicom和Screen
 ---
