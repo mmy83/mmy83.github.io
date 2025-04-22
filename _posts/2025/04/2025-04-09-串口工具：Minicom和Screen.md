@@ -2,8 +2,8 @@
 title: 串口工具：Minicom和Screen
 author: mmy83
 date: 2025-04-09 22:31:00 +0800
-categories: [IT技术, 软件]
-tags: [IT技术, 软件, 串口, minicom, com, screen]
+categories: [IT技术, 单片机]
+tags: [IT技术, 单片机, 串口, minicom, com, screen]
 math: true
 mermaid: true
 image:
