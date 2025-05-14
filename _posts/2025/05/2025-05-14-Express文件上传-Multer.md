@@ -8,7 +8,7 @@ tags: [express, 框架, multer, 上传]
 math: true
 mermaid: true
 image:
-  path: /images/2025/05/2025-05-14/Express文件上传-Multer/Express文件上传-Multer-00.png
+  path: /images/2025/05/2025-05-14/Express文件上传-Multer/Express文件上传-Multer-00.jpeg
   lqip: data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAAAwAgCdASoIAAQAAUAmJagCdLoB+AADE3gQAADhXcvEhi/FKc5qP/ZWPqWfpWUt+Sr/5+Z3bi/nMAAA
   alt: Express文件上传-Multer
 ---
